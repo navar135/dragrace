@@ -24,44 +24,11 @@ I will join three dataset the first two hosts information about all the contesta
 2. The second dataset is from the [UCLA School of Law Williams Institute](https://williamsinstitute.law.ucla.edu/publications/lgbt-us-msa/). The link provides the data as a series of tables in pdf format. I converted the first table to a csv for easy import.    
 * What each observation represents (unit of analysis)
 * Number of observations and key variables
-1. ~/data/rpdr_contep.rda has 2320 rows × 11 columns where the unit of analysis is (season, episode, contestant)
-2. ~/data/rpdr_contep.rda has 184 rows x 4 columns where the unit of analysis is the contestant
-3. ~/data/lgbt_metro_estimates.csv 
+1. *~/data/rpdr_contep.rda* has 2320 rows × 11 columns where the unit of analysis is (season, episode, contestant)
+2. *~/data/rpdr_contep.rda* has 184 rows x 4 columns where the unit of analysis is the contestant
+3. *~/data/lgbt_metro_estimates.csv* has 55 rows x 6 columns where the unit of analysis is the (State, MSA('metropolitan statistical areas')) 
+
 * Any filtering, cleaning, or transformation steps
 
-## 4. Methods
 
-Summarize how you analyzed the data:
 
-* The test statistic for your permutation test
-* How you simulated or resampled under the null hypothesis
-* The metric(s) for which you created bootstrap confidence intervals
-* Why the CLT does not apply to at least one metric
-
-## 5. Results
-
-Present your main findings:
-
-* Key summary statistics and visualizations
-* Observed test statistic and p-value (if applicable)
-* Bootstrap confidence intervals for relevant metrics
-
-## 6. Uncertainty Estimation
-
-Discuss your resampling results:
-
-* How many resamples you used
-* What the bootstrap or randomization distributions looked like
-* How you interpret the interval estimates
-
-## 7. Limitations
-
-Briefly note any limitations in data, assumptions, or methods, including sources of bias or missing data.
-
-## 8. References
-
-List all datasets, tools, libraries, or papers you cited.
-
----
-
-**Reminder:** Your README should be clear enough that someone unfamiliar with your work could understand what you studied, how you analyzed it, and what you found.
