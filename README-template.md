@@ -3,7 +3,6 @@
 ## 1. Research Question
 
 What are you investigating, and why does it matter?
-- I am investigating the performance of the contestants of RuPaul's Drag race. A reality competition show with 17 seasons aired as of 2025. RuPaul's Drag race has helped bring queer art, fashion, performance, vernacular and identity to the mainstream eye. RuPaul's Drag Race has reshaped competition style reality TV and has expanded world-wide with 16 internation spin offs of the original show. The show has often been reference as a turning point for LGBTQIA+ representation by showcasing queer and drag performers in a celebratory, unapologetic way. Unfortunately, we are at a time where a lot of this representation is being stripped away and we are seeing an increase in show cancellations that showcase queer characters, however, RuPaul's drag race continues to shine a light on the joy, beauty, and heartbreak of what it means to be queer in America. I hope to use the data science methods we learned this semester to shine a light on a show that has made Herstory.
 ## 2. Hypothesis
 
 State your null and alternative hypotheses clearly and succinctly.
