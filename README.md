@@ -12,23 +12,29 @@ What are you investigating, and why does it matter?
 ## 2. Hypothesis
 
 State your null and alternative hypotheses clearly and succinctly.  
-$H_0$ - Drag Queens from cities with a higher queer population are not more likely to win RuPaul's drag race compared to Drag queens from cities with low queer populations.  
-$H_1$ - Drag Queens from cities with higher queer population are more likely to win RuPaul's drag race compared to queens from cities with lower queer populations.
+$H_0$ - Drag Queens from states with a higher queer population are not more likely to win RuPaul's drag race compared to Drag queens from states with low queer populations.  
+$H_1$ - Drag Queens from states with higher queer population are more likely to win RuPaul's drag race compared to queens from states with lower queer populations.
 ## 3. Data Description
 Describe your data source(s):  
-I will join three dataset the first two hosts information about all the contestants and their performance for each episode of show. The second has population information for different U.S cities  
+I will join three dataset the first two hosts information about all the contestants, the secoond dataset has how each contestant performed for each episode of show. The third has LGBT population information for all U.S states. 
 
 * Where it comes from (URL, API, dataset name)
-1. The main two datasets was scraped from the [drag race wiki](https://rupaulsdragrace.fandom.com/wiki/RuPaul%27s_Drag_Race_Wiki) by a fellow drag race fan and academic Steven V. Miller.   
+1. The main two datasets containing all drag race data was scraped from the [drag race wiki](https://rupaulsdragrace.fandom.com/wiki/RuPaul%27s_Drag_Race_Wiki) by a fellow drag race fan and academic Steven V. Miller.   
     - https://github.com/svmiller/dragracer/tree/master?tab=readme-ov-file  
-2. The second dataset is from the [UCLA School of Law Williams Institute](https://williamsinstitute.law.ucla.edu/publications/lgbt-us-msa/) using the Gallup Daily Tracking survey to estimate LGBT population information from 55 major US MSA (metropolitan statistical areas). The link provides the data as a series of tables in pdf format. I converted the first table to a csv for easy import.    
-* What each observation represents (unit of analysis)
-* Number of observations and key variables
-1. *~/data/rpdr_contep.rda* has 2320 rows × 11 columns where the unit of analysis is (season, episode, contestant)
-2. *~/data/rpdr_contep.rda* has 184 rows x 4 columns where the unit of analysis is the contestant
-3. *~/data/lgbt_metro_estimates.csv* has 55 rows x 6 columns where the unit of analysis is the (State, MSA) 
+2. The second dataset is from the [Movement Advancement Project](https://www.lgbtmap.org/equality-maps/lgbt_populations) which provides estimate LGBT population information from all 50 States. The link has an option of providing the data as a table which I copied and converted to a csv using Xcel.  
 
-* Any filtering, cleaning, or transformation steps
+* What each observation represents (unit of analysis)
+1. *~/data/rpdr_contep.rda* - the unit of analysis is (season, episode, contestant)
+2. *~/data/rpdr_contestants.rda* - the unit of analysis is the contestant
+3. *~/data/lgbt_state_estimates.csv* - the unit of analysis is the (State)   
+
+* Number of observations and key variables  
+1. *~/data/rpdr_contep.rda* - has 2320 rows × 11 columns. The key variables are contestant and outcome 
+2. *~/data/rpdr_contestants.rda* - has 184 rows x 4 columns. The key variables are contestant and hometown
+3. *~/data/lgbt_state_estimates.csv* has 56 rows x 6. The key variables are State and lgbt_population_density  
+
+* Any filtering, cleaning, or transformation steps  
+
 
 
 
