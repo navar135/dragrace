@@ -94,5 +94,5 @@ Metrics used:
 ## 8. References
 
 - Steven V. Miller’s Drag Race dataset: https://github.com/svmiller/dragracer  
-- UCLA Williams Institute LGBT population data  
+- UCLA Williams Institute LGBT population data: https://williamsinstitute.law.ucla.edu/publications/lgbt-us-msa/   
 - Course modules on bootstrap, permutation testing, and CLT
