@@ -12,8 +12,8 @@ What are you investigating, and why does it matter?
 ## 2. Hypothesis
 
 State your null and alternative hypotheses clearly and succinctly.  
-$H_0$ - Drag Queens from states with a higher queer population are not more likely to win RuPaul's drag race compared to Drag queens from states with low queer populations.  
-$H_1$ - Drag Queens from states with higher queer population are more likely to win RuPaul's drag race compared to queens from states with lower queer populations.
+$H_0$ - Drag Queens from states with a higher queer population are not more likely to win RuPaul's drag race maxi challenge compared to Drag queens from states with low queer populations.  
+$H_1$ - Drag Queens from states with higher queer population are more likely to win RuPaul's drag race maxi challenge compared to queens from states with lower queer populations.
 ## 3. Data Description
 Describe your data source(s):  
 I will join three dataset the first two hosts information about all the contestants, the secoond dataset has how each contestant performed for each episode of show. The third has LGBT population information for all U.S states. 
@@ -29,12 +29,14 @@ I will join three dataset the first two hosts information about all the contesta
 3. *~/data/lgbt_state_estimates.csv* - the unit of analysis is the (State)   
 
 * Number of observations and key variables  
-1. *~/data/rpdr_contep.rda* - has 2320 rows × 11 columns. The key variables are contestant and outcome 
+1. *~/data/rpdr_contep.rda* - has 2320 rows × 11 columns. The key variables are contestant, outcome, rank
 2. *~/data/rpdr_contestants.rda* - has 184 rows x 4 columns. The key variables are contestant and hometown
 3. *~/data/lgbt_state_estimates.csv* has 56 rows x 6. The key variables are State and lgbt_population_density  
 
 * Any filtering, cleaning, or transformation steps  
-
+1. *~/data/rpdr_contep.rda* - none  
+2. *~/data/rpdr_contestants.rda* - split hometown column to two columns city and state. There was one entry where a queen had two hometowns one in the UK and one in the US - the US hometown was preserved 
+3.  *~/data/lgbt_state_estimates.csv* - all text was converted to lowercase to match other datasets.  
 
 
 
