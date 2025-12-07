@@ -44,7 +44,7 @@ Describe your data sources:
 
 ### Filtering, Cleaning, and Transformations
 1. `rpdr_contep.rda` – none  
-2. `rpdr_contestants.rda` – fuzzy matching and hard-coded mapping were used to create an approximate MSA for each hometown. Example: a queen from Brooklyn, NY was mapped to **New York (NY-NJ-PA)**.  
+2. `rpdr_contestants.rda` – fuzzy matching and hard-coded mappings were used to create an approximate MSA for each hometown. Example: a queen from Brooklyn, NY was mapped to **New York (NY-NJ-PA)**.  
 3. `lgbt_metro_estimates.csv` – lowercase conversion; created a binary variable for high queer population density.
 
 ## 4. Methods
@@ -59,8 +59,7 @@ Metrics used:
 - Median win rate per group
 
 ### Why CLT Does Not Apply
-- The CLT applies to means of large samples.  
-- The **median** does not follow the CLT; its sampling distribution is not approximately normal.
+- The **median** does not follow the CLT since this applies to means of large samples and its sampling distribution would not be approximately normal.
 
 ## 5. Results
 
@@ -83,12 +82,12 @@ Metrics used:
 ## 6. Uncertainty Estimation
 
 - 5,000 bootstrap samples were used.  
-- The bootstrap distributions were asymmetric, especially for the median. The assymetry was between the high and low queer density groups. I think this is because there was a high rate of queens who did not win a single challenge in the group with low queer population  
+- The bootstrap distributions were asymmetric, especially for the median. The assymetry was between the high and low queer density groups. I think this is because there was a high rate of queens who did not win a single challenge in the group with low queer population skewing the median to zero.
 - Interpretation: Even accounting for uncertainty, queens from high-queer-density cities appear to have a different win-rate distribution.
 
 ## 7. Limitations
 
-- The major limitation was finding a dataset with enough information on queer population across the country. The dataset I was able to find grouped areas across state lines which also added a layer of challenge. Lastly the dataset of drag queens hometowns with not follow an easy city, state pattern but often used sall towns within a bigger city. I accounted for this by using fuzzy matching on the hometown → MSA mapping. This introduces uncertainty on if the mapping is correct. 
+- The major limitation was finding a dataset with enough information on queer population across the country. The dataset I was able to find grouped metro areas across state lines which also added a layer of complexity. Lastly the dataset of the drag queens' hometowns did not follow an easy (city, state) pattern, instead it often used small towns within a bigger city. I have some experience using fuzzy matching at work so with some AI help I used fuzzy matching to try and match on the hometown → MSA mapping. This introduces uncertainty if the mapping is incorrect. 
 - LGBT population data only covers major MSAs and excludes territories like Puerto Rico from which 9 queens are from.
 - Win rate doesn't tell the full story, some queens might have won more challenges but also been more inconsistent in their performances across the season fluctuating from top and bottom. 
 
