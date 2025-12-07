@@ -4,10 +4,11 @@
 
 What are you investigating, and why does it matter?
 
-- I am investigating the performance of the contestants of RuPaul's Drag Race. I want to use descriptive statistics to explore which queens are more likely to win different kinds of challenges. Then I will use hypothesis testing to answer the question: **Are queens from cities with a high queer population more likely to win RuPaul's Drag Race?**
+- I am investigating the performance of the contestants of RuPaul's Drag Race. I want to use descriptive statistics to explore which queens are more likely to win a main challenge across seasons. Then I will use hypothesis testing to answer the question: **Are queens from cities with a high queer population more likely to win RuPaul's Drag Race?**
 - RuPaul's Drag Race is a reality competition show with 17 seasons aired as of 2025. The show has helped bring queer art, fashion, performance, vernacular, and identity into the mainstream. It has reshaped competition-style reality TV and expanded worldwide with 16 international spin-offs. The show is often cited as a turning point for LGBTQIA+ representation by showcasing queer and drag performers in a celebratory, unapologetic way.
 - Unfortunately, we are at a time where queer representation is being stripped away, and we are seeing cancellations of shows with queer characters. However, RuPaul's Drag Race continues to shine a light on the joy, beauty, and heartbreak of what it means to be queer in America. I hope to use the data science methods from this semester to analyze a show that has truly made *Herstory*.
-
+               ![](https://github.com/navar135/dragrace/blob/main/gifs/Drag%20Race%20Mama%20Ru%20GIF%20by%20RuPaul's%20Drag%20Race.gif)  
+              
 ## 2. Hypothesis
 
 State your null and alternative hypotheses clearly:
@@ -81,18 +82,19 @@ Metrics used:
 
 ## 6. Uncertainty Estimation
 
-- 20,000 permutations and 1,000 bootstrap samples were used.  
-- The bootstrap distributions were asymmetric, especially for the median.  
+- 5,000 bootstrap samples were used.  
+- The bootstrap distributions were asymmetric, especially for the median. The assymetry was between the high and low queer density groups. I think this is because there was a high rate of queens who did not win a single challenge in the group with low queer population  
 - Interpretation: Even accounting for uncertainty, queens from high-queer-density cities appear to have a different win-rate distribution.
 
 ## 7. Limitations
 
-- Manual and fuzzy hometown → MSA mapping introduces uncertainty.
-- LGBT population data only covers major MSAs.
-- Win rate simplifies nuanced performance context across seasons.
+- The major limitation was finding a dataset with enough information on queer population across the country. The dataset I was able to find grouped areas across state lines which also added a layer of challenge. Lastly the dataset of drag queens hometowns with not follow an easy city, state pattern but often used sall towns within a bigger city. I accounted for this by using fuzzy matching on the hometown → MSA mapping. This introduces uncertainty on if the mapping is correct. 
+- LGBT population data only covers major MSAs and excludes territories like Puerto Rico from which 9 queens are from.
+- Win rate doesn't tell the full story, some queens might have won more challenges but also been more inconsistent in their performances across the season fluctuating from top and bottom. 
 
 ## 8. References
 
 - Steven V. Miller’s Drag Race dataset: https://github.com/svmiller/dragracer  
 - UCLA Williams Institute LGBT population data: https://williamsinstitute.law.ucla.edu/publications/lgbt-us-msa/   
 - Course modules on bootstrap, permutation testing, and CLT
+- Article on Drag race impact : https://www.esquire.com/entertainment/a43145366/rupauls-drag-race-legacy/ 
